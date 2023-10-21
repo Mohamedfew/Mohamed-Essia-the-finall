@@ -15,9 +15,7 @@ ul,li{
     margin-top: -10px;
   font-size: 18px;
   font-weight: bold;
-  /* background-color: rgb(0, 28, 48);
-   */
-   background-color: #114d9b;
+  background-color: rgb(0, 28, 48);
   border-bottom-left-radius: 26px;
   border-bottom-right-radius: 26px;
   position: fixed !important;
