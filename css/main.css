@@ -1,7 +1,8 @@
 body{
-    font-family: 'Cairo', sans-serif;
-    font-family: 'Roboto Flex', sans-serif;
-    direction: rtl;
+
+    direction: rtl !important;
+    font-family: 'Cairo', sans-serif !important;
+    font-family: 'Roboto Flex', sans-serif !important;
 
 
 }
@@ -18,14 +19,14 @@ ul,li{
   border-bottom-left-radius: 26px;
   border-bottom-right-radius: 26px;
   position: fixed !important;
+  z-index: 10000;
   width: 100%;
   top:-100px;
-  z-index: 10000;
   animation: top-bottom  2s  .4s forwards;
 
 }
+
 .navbar .collapse ul li a{
-    
     color: white;
     transition: .4s;
 }
@@ -142,6 +143,100 @@ font-size: 18px;
             top:5px;
         }
     }
+
+    .alertnav {
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        z-index: 1;
+        margin:20px auto;
+        color: white;
+        padding: 50px;
+        text-align: center;
+    }
+    .alertnav p{
+        background:#114d9b;
+        width: 58%;
+        font-size: 20px;
+        height: 0px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: top-to-bottom 7s 3s alternate-reverse forwards  linear;
+        border-radius: 30px;
+    }
+    @media (max-width:500px){
+
+    .alertnav p{
+        background:#114d9b;
+        width: 90%;
+        line-height: 2;
+        font-size: 20px;
+        height: 0px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: top-to-bottom 10s 3s forwards  linear;
+        border-radius: 30px;
+    }
+}
+
+
+    @keyframes top-to-bottom {
+     25%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+
+     }
+
+        50%{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+
+        }
+        75%{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+      
+        
+        100%{
+               display: none;
+        }
+    }
+    @media (max-width:500px){
+        @keyframes top-to-bottom {
+     
+
+            50%{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+    
+            }
+            75%{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+              
+            }
+          
+            
+            100%{
+                   display: none;
+            }
+        }
+    }
     .main p,
     .text p{        
         width: 78%;
@@ -159,6 +254,27 @@ font-size: 18px;
         padding: 30px;
         transition: .4s;
     }
+    @media (max-width:400px) {
+        .photo img{
+            max-width: 100%;
+            padding: 30px;
+            transition: .4s;
+        }
+    }
+    @media (min-width:401px ) {
+        .photo img{
+            max-width: 49%;
+            padding: 30px;
+            transition: .4s;
+        }
+    }
+    @media (min-width:680px ) {
+        .photo img{
+            max-width: 30%;
+            padding: 30px;
+            transition: .4s;
+        }
+    }
 
     .photo img:hover{
         transform: translate(-20px,-20px);
@@ -166,7 +282,10 @@ font-size: 18px;
 
 
     footer{
-    background-color: #005B41;
+        /* position: relative;
+        width: 100%;
+        bottom: 0; */
+    background-color: #114d9b;
     color: white;
     padding-top:30px;
     padding-bottom:20px;
@@ -194,10 +313,11 @@ font-size: 18px;
         text-decoration: none;
         padding: 10px;
         font-size: 20px;
+  
     }
     footer ul li a:hover,
     footer ul li:hover {
-        color: #1773eb;
+        color: black;
         transform: translate(-18px);
 
     }
@@ -210,6 +330,7 @@ font-size: 18px;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
+       
     }
     footer .two{
         margin-top: 20px;
@@ -244,8 +365,13 @@ font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 30em;
+    height: 43em;
     
+   }
+   @media (min-width:910px){
+    .chosseyears ul{
+        height: 55em;
+    }
    }
    .chosseyears ul a{
     display: block;
@@ -264,14 +390,25 @@ font-size: 18px;
 
 
 
-
-
-
-
    /* mohdrateSesson2*/
    .content{
-    margin: 100px auto;
+    margin: 100px auto !important;
     text-align: center;
+}
+@media (max-width:403px){
+    .content{
+        height: 900px;
+    }
+}
+@media (min-width:404px){
+    .content{
+        height:  485px;;
+    }
+}
+@media (min-width:804px){
+    .content{
+        height:  400px;;
+    }
 }
 .contentone{
     margin: 273px auto;
@@ -335,6 +472,28 @@ font-size: 18px;
 
    /* acountent */
 
+   .chooseSection{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+   }
+   
+   .chooseSection button{
+    border: none;
+    outline: none;
+    background-color: #005B41;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .5s;
+   }
+   .chooseSection button:hover{
+    background-color: darkred;
+    transform: translate(-10px,-10px);
+   }
+
+
    section{
     text-align: center;
     margin-top: 100px;
@@ -363,9 +522,9 @@ font-size: 18px;
     list-style: none;
     font-size: 25px;
     padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: inline-block;
+    text-align: center;
+    margin: 26px auto;
 }
 
    .acountent ul li span{
@@ -374,6 +533,11 @@ font-size: 18px;
     border-radius: 10px;
     color: white;
     height: 65px;
+    transition: .4s;
+}
+
+.acountent ul li span:hover{
+    transform: scale(1.2);
    }
 
    .acountent ul li div{
@@ -382,26 +546,136 @@ font-size: 18px;
 
    .acountent ul li div p{
     line-height: 3;
+    padding: 19px 22px;
+    line-height: 3;
+    padding: 19px 22px;
+    border: solid green 4px;
+    margin-top: 20px;
+    border-radius: 19px;
+   }
+   .acountent ul li div p img{
+    max-width: 100%;
    }
 
+   .closen-1,
    .closen{
     font-size: 18px;
+    height: 40px;
+    width: 39px;
     position: fixed;
     left: 2%;
-    top: 31%;
+    top: 15%;
     cursor: pointer;
-    background-color: red;
+    background-color: cadetblue;
     padding: 8px;
-    color: white;
-    border-radius: 20px;
+    color: black;
+    border-radius: 50%;
     display: none;
+   }
+   
+ 
+
+   .shwoaconutant{
+    display: block;
+   }
+
+   .header-prorgming{
+       margin-top: 170px;
+       text-align: center;
+    }
+    .header-prorgming h2{
+        margin: 10px auto;
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-align: center;
+        width: 0%;
+        animation:header 2s linear alternate  infinite ;  
+    }
+ .name-writer{
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 54px;
+} 
+.name-writer ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 347px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+ }
+
+
+ .name-writer ul li{
+    list-style: none;
+     width: 100%;
+     height: 0px;
+    
+ }
+ 
+ .name-writer ul li:nth-child(1){
+    animation: colored 1s alternate  2s  linear infinite;
+ }
+ .name-writer ul li:nth-child(2){
+    animation: colored 1s alternate infinite 3s;
+}
+.name-writer ul li:nth-child(3){
+     animation: colored 1s alternate  linear infinite 4s;
+     
+    }
+    .name-writer ul li:nth-child(4){
+     animation: colored 1s alternate  linear infinite 5s;
+    }
+    .name-writer ul li:nth-child(5){
+     animation: colored 1s alternate  linear infinite 6s;
+ }
+    .name-writer ul li:nth-child(6){
+     animation: colored 1s alternate  linear infinite 7s;
+ }
+
+
+ @keyframes colored {
+    from{
+        color: transparent;
+    }
+    
+    to{
+         transform: scale(1.3);
+        color:#1773eb
+      
+    }
+ }
+
+  
+
+   @keyframes header {
+    0%{
+        width: 0%;
+    }
+    30%{
+        width: 25%;
+    }
+    60%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+        color:red;
+        
+    }
+   
+    
+    
    }
 
 
    /* table mohdrate */
 
    .table {
-    margin-top: 200px;
+    margin: 100px auto !important;
+   
    }
    .table  ul{
     display: flex;
@@ -485,3 +759,4 @@ font-size: 18px;
     
 
    }
+
