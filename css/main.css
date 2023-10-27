@@ -7,6 +7,8 @@ body{
 
 }
 
+
+
 ul,li{
     /* margin: 10px auto !important; */
     padding: 0 !important;
@@ -26,6 +28,7 @@ ul,li{
 
 }
 
+
 .navbar .collapse ul li a{
     color: white;
     transition: .4s;
@@ -42,15 +45,16 @@ color: black;
 font-size: 18px;
 }
 .navbar-brand img{
-  max-width:15%;
+    max-width: 40%;
+    height: 111%;
     border-radius: 50%;
 }
 
-@media(max-width:500px){
     .navbar-brand {
-        width: 78%;
+        width: 49%;
+        height: 60px !important;
     }
-}
+
 
 
 
@@ -525,6 +529,8 @@ font-size: 18px;
     display: inline-block;
     text-align: center;
     margin: 26px auto;
+    width: 100%;
+    text-align: center;
 }
 
    .acountent ul li span{
@@ -533,18 +539,13 @@ font-size: 18px;
     border-radius: 10px;
     color: white;
     height: 65px;
-    transition: .4s;
 }
-
-.acountent ul li span:hover{
-    transform: scale(1.2);
-   }
 
    .acountent ul li div{
     display: none;
    }
 
-   .acountent ul li div p{
+   .acountent ul li div {
     line-height: 3;
     padding: 19px 22px;
     line-height: 3;
@@ -554,21 +555,42 @@ font-size: 18px;
     border-radius: 19px;
    }
    .acountent ul li div p img{
-    max-width: 100%;
-   }
+       max-width: 100%;
+    }
+    .acountent ul li div  h1{
+        margin: 10px auto 20px ;
+    }
+    .acountent ul li div  h2{
+        margin:70px auto 20px;
+      
+    }
+    .acountent ul li div a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        transition: .4s;
+    }
+    .acountent ul li div a:hover{  
+        color: #1773eb;
+        transform: translate(-10px);
+    }
 
    .closen-1,
    .closen{
+    text-align: center;
     font-size: 18px;
     height: 40px;
     width: 39px;
     position: fixed;
-    left: 2%;
+    left: 10%;
     top: 15%;
+    z-index: 13;
     cursor: pointer;
-    background-color: cadetblue;
+    background-color: red;
     padding: 8px;
-    color: black;
+    color: white;
     border-radius: 50%;
     display: none;
    }
@@ -580,6 +602,7 @@ font-size: 18px;
    }
 
    .header-prorgming{
+    width: 100% !important;
        margin-top: 170px;
        text-align: center;
     }
@@ -588,6 +611,7 @@ font-size: 18px;
         text-wrap: nowrap;
         overflow: hidden;
         text-align: center;
+        height: 40px;
         width: 0%;
         animation:header 2s linear alternate  infinite ;  
     }
@@ -760,3 +784,88 @@ font-size: 18px;
 
    }
 
+
+
+
+
+
+object{
+    background-image: url("/maxresdefault.jpg");
+width: 100%;
+height: 600px;
+position: relative;
+margin-bottom: 47px;
+
+}
+.acountent ul div{
+    display: none;
+}
+.acountent ul div h1{
+    text-align: center;
+}
+
+
+.acountent ul li span{
+    background-color: #114d9b;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    height: 65px;
+    display: block;
+   width: 20%;
+    margin: 10px auto;
+   
+}
+@media (max-width:400px){
+    .acountent ul li {
+        list-style: none;
+        font-size: 25px;
+        padding: 10px;
+        display: inline-block;
+        text-align: center;
+        margin: 26px auto;
+        width: 100%;
+        text-align: center;
+    }
+    .acountent ul li span {
+        background-color: #114d9b;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        height: 65px;
+        display: block;
+        width: 66%;
+        margin: 10px auto;
+    }
+
+}
+@media (min-width:400px){
+    .acountent ul li {
+        list-style: none;
+        font-size: 25px;
+        padding: 10px;
+        display: inline-block;
+        text-align: center;
+        margin: 26px auto;
+        width: 100%;
+        text-align: center;
+    }
+    .acountent ul li span {
+        background-color: #114d9b;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        height: 65px;
+        display: block;
+        width: 40%;
+        margin: 10px auto;
+    }
+
+}
+
+
+ul div a{
+    font-size: 30px;
+    color: red;
+    text-decoration: none;
+}

@@ -1,4 +1,24 @@
 
+// let audio = document.querySelector("#audio");
+// audio.style.display = "none"
+// console.log(audio)
+
+// let mohdratess = document.querySelector("#mohadrate")
+// console.log(mohdratess)
+
+//  window.onclick = ()=>{
+//     let aud = new Audio ("/dfeqwrfew.mp3");
+//     let sound = true;
+//     if(sound === true){
+//         aud.play() 
+//     }
+//     else{   
+//         aud.pause()
+//     }
+    
+// }
+
+
 
 // mohdrate
 let ul  = document.querySelectorAll("li");
@@ -6,7 +26,6 @@ let close= document.querySelector(".closen");
 ul.forEach((li)=>{
    
     li.addEventListener(("click"),(e)=>{
-        
      let ele = e.currentTarget.dataset.show;
      console.log(ele)
      document.querySelector(ele).style.display="block"
@@ -78,9 +97,9 @@ if(window.scrollY >= sectiontext.offsetTop-400){
 if(window.scrollY >= sectionphoto.offsetTop-300){
     sectionphoto.style.cssText = "   animation:right-to-left 2s linear " 
 }
-if(window.scrollY >= sectiontext.offsetTop+300){
+if(window.scrollY >= sectiontext.offsetTop+250){
     console.log("fdsfsd")
-    footer.style.cssText = "   animation:height-top-bottom 2s linear" 
+    footer.style.cssText = "   animation:height-top-bottom 3s linear" 
 }
 
 
