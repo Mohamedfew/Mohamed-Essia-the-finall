@@ -10,11 +10,11 @@ body{
 
 
 ul,li{
-    /* margin: 10px auto !important; */
+
     padding: 0 !important;
 }
 .navbar {
-    margin-top: -10px;
+  margin-top: -10px;
   font-size: 18px;
   font-weight: bold;
   background-color: rgb(82, 207, 191);
@@ -286,9 +286,6 @@ font-size: 18px;
 
 
     footer{
-        /* position: relative;
-        width: 100%;
-        bottom: 0; */
     background-color: #114d9b;
     color: white;
     padding-top:30px;
@@ -317,7 +314,6 @@ font-size: 18px;
         text-decoration: none;
         padding: 10px;
         font-size: 20px;
-  
     }
     footer ul li a:hover,
     footer ul li:hover {
@@ -469,9 +465,6 @@ font-size: 18px;
    .content ul li a:hover{
     color:black
    }
-
-
-
 
 
    /* acountent */
